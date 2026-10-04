@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="bus">
+
+        <div class="bus-body">
+
+            <div class="window"></div>
+
+            <div class="school-sign">
+                SCH<a href="https://fes.hseschools.org/">O</a>OL 101
+            </div>
+
+        </div>
+
+        <a href="https://a1truckwheels.com/buses/">
+            <div class="wheel left-wheel"></div>
+        </a>
+
+        <a href="https://a1truckwheels.com/buses/">
+            <div class="wheel right-wheel"></div>
+        </a>
+
+    </div>
+    <style>
+
+        body {
+            margin: 0;
+            background-color: white;
+        }
+
+        .bus {
+            position: relative;
+            width: 350px;
+            height: 310px;
+            margin: 100px;
+        }
+
+        /* Yellow part of the bus */
+        .bus-body {
+            position: absolute;
+            width: 350px;
+            height: 230px;
+            background-color: yellow;
+            top: 0;
+            left: 0;
+
+            border-top-left-radius: 65px;
+            border-top-right-radius: 65px;
+
+            z-index: 2;
+        }
+
+        /* Black rear window */
+        .window {
+            position: absolute;
+            width: 290px;
+            height: 95px;
+            background-color: black;
+
+            top: 30px;
+            left: 30px;
+
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+
+            z-index: 3;
+        }
+
+        /* School sign */
+        .school-sign {
+            position: absolute;
+
+            top: 170px;
+            left: 58px;
+
+            background-color: yellow;
+            border: 3px solid red;
+
+            font-size: 34px;
+            font-weight: bold;
+
+            z-index: 4;
+        }
+
+        /* Removes underline from clickable O */
+        .school-sign a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Wheels */
+        .wheel {
+            position: absolute;
+
+            width: 58px;
+            height: 100px;
+
+            background-color: black;
+
+            top: 220px;
+
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            z-index: 1;
+        }
+
+        .left-wheel {
+            left: 30px;
+        }
+
+        .right-wheel {
+            right: 30px;
+        }
+
+    </style>
+</body>
+</html>
